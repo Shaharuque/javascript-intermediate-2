@@ -1,0 +1,59 @@
+32-2 Destructuring Object to extract values to variables: object destructring dekhano hoisilo
+32-3 (advanced) Array Destructuring, nested object Optional chaining
+//optional chaining(important to debug the error)
+
+const myObject={x:5,y:6,p:7,q:8}
+//object destructuring
+// const {x,y}=myObject
+// console.log(x,y)
+// console.log(myObject.a.b) //myObject ar moddhey a ar value khujtese as a ar value nai undefined dibey kinto undefine 'a' ar moddhey abr 'b' search korley "Cannot read properties of undefined (reading 'b')" amn error dey so amn type error handle ar jnno optional chaining use kora lagbey 
+//optional chaining: The optional chaining ?. is a safe way to access nested object properties, even if an intermediate property doesn’t exist.
+console.log(myObject?.a?.b)  //shudu undefine show korbey now
+Remember:
+The optional chaining ?. syntax has three forms:
+obj?.prop – returns obj.prop if obj exists, otherwise undefined.
+obj?.[prop] – returns obj[prop] if obj exists, otherwise undefined.
+obj.method?.() – calls obj.method() if obj.method exists, otherwise returns undefined.
+
+32-4 Array map to do one line loop magic:
+remember: map can be used to loop through array or object
+Map is a collection of keyed data items, just like an Object. But the main difference is that Map allows keys of any type.return the result in an array after finishing calculation
+
+32-5 Map string array, array of objects map, foreach: map basically number of array or string array or array of objects return korey.
+Remember;map ar sathey kichota mil asey foreach ar but difference holo foreach return korey na but map kicho retuern korey
+map:const productPrice=products.map(product=>product.price)
+    console.log(productPrice)
+foreach:products.forEach(product=>console.log(product)) 
+
+32-6 (advanced) Implement filter, find ->on an array of objects
+filter:
+The filter() method creates a new array filled with elements that pass a test provided by a function.
+The filter() method does not execute the function for empty elements.
+The filter() method does not change the original array.
+
+Remember: map() and filter() almost same ,map() sob gula element niye kicho ekta korey then sei result ekta array tey korey return korbey kinto filter() kicho condition check korbey array ar each element ar jnno and jeisob element condition pass korbey tader niye notun array return korbey.
+
+//filter() ar kachakachi arekta method asey seita holo find() main difference is filter() ekta array return korey but find()
+directly ekta element return korey jeita condition fulfill kortey parey seita
+
+//object oriented JS:-
+32-7 (advanced) Class, constructor, method, create object from class:
+->A JavaScript class is not an object.
+It is a template for JavaScript objects.
+->When you have a class, you can use the class to create objects.
+
+->class ar vitor object ar property gulu access korar jnno this keyword use kora hoy. 
+
+->The constructor method is a special method:
+It has to have the exact name "constructor"
+It is executed automatically when a new object is created
+It is used to initialize object properties
+
+32-8 (advanced) Inheritance, extends class, super, class method:
+To create a class inheritance, use the extends keyword.
+A class created with a class inheritance inherits all the methods from another class:
+->Inheritance is useful for code reusability: reuse properties and methods of an existing class when you create a new class.
+
+32-9 (advanced) Prototypical inheritance and module summary:
+
+ Prototypical inheritance:
